@@ -1,12 +1,4 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-  "builds": [
-    {
-      "src": "FRONTEND/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "FRONTEND/dist/temp-project/browser"
-      }
-    }
-  ]
+  "outputDirectory": "dist/temp-project/browser"
 }
